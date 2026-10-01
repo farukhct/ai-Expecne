@@ -1,0 +1,6 @@
+{
+  "name": "EXPANCE - Finance & Bike Management System",
+  "description": "Offline-first personal finance, bike income, mileage, and maintenance management desktop suite inspired by iBAS++.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
