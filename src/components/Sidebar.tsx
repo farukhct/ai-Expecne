@@ -19,6 +19,7 @@ import {
   ChevronRight,
   Code2,
   FileUp,
+  BookOpen,
 } from 'lucide-react';
 
 export type NavTab =
@@ -37,7 +38,8 @@ export type NavTab =
   | 'master_data'
   | 'backup_restore'
   | 'audit_logs'
-  | 'desktop_architect';
+  | 'desktop_architect'
+  | 'user_manual';
 
 export interface NavItem {
   id: NavTab;
@@ -72,6 +74,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       title: 'Main Navigation',
       items: [
         { id: 'dashboard' as NavTab, label: 'Dashboard', icon: LayoutDashboard },
+        { id: 'user_manual' as NavTab, label: 'User Manual & Instructions', icon: BookOpen, badge: 'Guide' },
         { id: 'desktop_architect' as NavTab, label: 'Master Prompt & Roadmap', icon: Code2, badge: 'Architect' },
       ],
     },

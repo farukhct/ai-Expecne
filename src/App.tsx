@@ -35,6 +35,7 @@ import { MigrationView } from './components/MigrationView';
 import { BackupRestoreView } from './components/BackupRestoreView';
 import { AuditLogsView } from './components/AuditLogsView';
 import { DesktopRoadmapView } from './components/DesktopRoadmapView';
+import { UserManualView } from './components/UserManualView';
 import { QuickEntryModal } from './components/QuickEntryModal';
 import { GlobalSearchModal } from './components/GlobalSearchModal';
 import { LoginModal } from './components/LoginModal';
@@ -424,6 +425,10 @@ export default function App() {
 
           {currentTab === 'desktop_architect' && (
             <DesktopRoadmapView />
+          )}
+
+          {currentTab === 'user_manual' && (
+            <UserManualView />
           )}
         </main>
       </div>
